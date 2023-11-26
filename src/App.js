@@ -21,10 +21,11 @@ export default class App extends Component {
     return (
       <div className='ajay'>
         <div className='sai'>
-        <h1>{advice}</h1>
+          <h1>{advice}</h1>
+          <button className='aj' onClick={this.fetchData}>
+            <span>Give Me An Advice</span>
+          </button>
         </div>
-        <button className='aj' onClick={this.fetchData}>Give Me Advice
-        </button>
       </div>
     )
   }

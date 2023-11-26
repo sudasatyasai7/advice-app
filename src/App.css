@@ -1,26 +1,59 @@
-.ajay{
-  text-align: center;
-  border: 1px solid black;
-  background: url('./aaa.jpg');
-  background-repeat:no-repeat;
-  background-size: cover;
+#root, html, body {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
 
-}
-.sai{
-  margin: 300px 150px 50px 150px;
-}
-.aj{
-  height: 50px;
-  width: 200px;
-  margin-bottom: 200px;
-  border-radius: 50px;
-}
-h1{
+.ajay {
+  height: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('./aaa.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: white;
 }
+
+.sai {
+  background: whitesmoke;
+  width: 40%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 25px;
+  padding: 2%;
+  box-shadow: 10px 10px;
+}
+
+.h1 {
+  display: flex;
+  align-items: center;
+  height: 582px;
+  position: absolute;
+  left: 20px;
+}
+
+.aj {
+  position: absolute;
+  bottom: 100px;
+  left: 40%;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 100px;
+  width: 150px;
+  opacity: 1;
+  background-color: #ffffff;
+  border: 1px solid rgba(22, 76, 167, 0.6);
+}
+  
 .aj {
   color: #164ca7;
   font-size: 12px;
@@ -32,7 +65,7 @@ h1{
   animation: rotate 0.7s ease-in-out both;
 }
   
-.aj:hover{
+.aj:hover span {
   animation: storm 0.7s ease-in-out both;
   animation-delay: 0.06s;
 }
@@ -72,3 +105,10 @@ h1{
     transform: translate3d(0, 0, 0) translateZ(0);
   }
 }  
+
+@media only screen and (max-width: 600px) {
+  .card {
+      width: 80%;
+      height: 30%;
+  }
+}
