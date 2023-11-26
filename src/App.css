@@ -4,24 +4,22 @@
   background: url('./aaa.jpg');
   background-repeat:no-repeat;
   background-size: cover;
+  margin: 0;
+  padding: 0;
 
 }
 .sai{
   margin: 300px 150px 50px 150px;
-  border-radius: 10px;
 }
 .aj{
   height: 50px;
   width: 200px;
-  border-radius: 10px;
   margin-bottom: 200px;
+  border-radius: 50px;
 }
 h1{
-  background-color: white;
-  border: 1px solid green;
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  text-align: center;
+  color: white;
 }
 .aj {
   color: #164ca7;
@@ -74,10 +72,3 @@ h1{
     transform: translate3d(0, 0, 0) translateZ(0);
   }
 }  
-
-@media only screen and (max-width: 600px) {
-  .card {
-      width: 80%;
-      height: 30%;
-  }
-}
