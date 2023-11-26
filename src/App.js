@@ -19,10 +19,10 @@ export default class App extends Component {
   render() {
     const{advice}=this.state
     return (
-      <div className='ajay'>
-        <div className='sai'>
-          <h1>{advice}</h1>
-          <button className='aj' onClick={this.fetchData}>
+      <div className='app'>
+        <div className='card'>
+          <h1 className='heading'>{advice}</h1>
+          <button className='button' onClick={this.fetchData}>
             <span>Give Me An Advice</span>
           </button>
         </div>
